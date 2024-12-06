@@ -2,14 +2,10 @@ spring:
   application:
     name: "configserver"
   profiles:
-    # active: native
     active: git
   cloud:
     config:
       server:
-        # native:
-          # search-locations: "classpath:/config"
-          # search-locations: "file:///Users//eazybytes//Documents//config"
         git:
           uri: "https://github.com/engeslam399/configs.git"
           default-label: main
